@@ -143,10 +143,6 @@
 .icon-instagram:before {
   content: '\f16d';
 }
-.icon-email:before {
-  content: '\f0e0';
-  font-weight: 900;
-}
 .sidebar-toc-btn:before {
   font-family: var(--font-icon);
   content: '\f0e8';
