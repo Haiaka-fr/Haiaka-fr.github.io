@@ -43,9 +43,9 @@
   --highlight-deletion-bg: #f3e8ff;
   --highlight-addition: #10b981;
   --highlight-addition-bg: #ecfdf5;
-  --cursor-default: default;
-  --cursor-pointer: pointer;
-  --cursor-text: text;
+  --cursor-default: url("../images/cursor/normal.png"), auto;
+  --cursor-pointer: url("../images/cursor/pointer.png"), pointer;
+  --cursor-text: url("../images/cursor/text.png"), text;
   --footer-icon: url("../images/taichi.png");
   --sponsor-icon: url("../images/taichi.png");
   --top-icon: url("../images/taichi.png");
