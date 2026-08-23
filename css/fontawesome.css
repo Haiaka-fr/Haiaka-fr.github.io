@@ -140,8 +140,23 @@
 .icon-github:before {
   content: '\f09b';
 }
+.icon-facebook:before {
+  content: '\f09a';
+}
+.icon-twitter:before {
+  content: '\e61b';
+}
 .icon-instagram:before {
   content: '\f16d';
+}
+.icon-reddit:before {
+  content: '\f1a1';
+}
+.icon-discord:before {
+  content: '\f392';
+}
+.icon-steam:before {
+  content: '\f1b6';
 }
 .sidebar-toc-btn:before {
   font-family: var(--font-icon);
