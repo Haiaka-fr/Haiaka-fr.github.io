@@ -34,6 +34,7 @@
 <link rel="stylesheet" href="/css/style.css">
 
   <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx/1oA/0l8ysE" crossorigin="anonymous">
+      <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://npm.webcache.cn/katex@0.16.47/dist/katex.min.css" integrity="sha384-nH0MfJ44wi1dd7w6jinlyBgljjS8EJAh2JBoRad8a3VDw2K69vfaaqm4WnR+gXtA" crossorigin="anonymous">
     
 <script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
 
@@ -203,7 +204,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">2</div>
+    <div class="sidebar-state-number">3</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -321,6 +322,14 @@
             長億115首屆競程舉辦心得
         </h3>
       </div>
+    <div class="article-nav-link-wrap right">
+        <img data-src="https://raw.githubusercontent.com/Haiaka-fr/Haiaka-fr.github.io/refs/heads/main/post_images/apcs_20250105/cover.webp" data-sizes="auto" alt="第一次考APCS心得" class="lazyload">
+      <a href="/zh-CN/2025/01/05/apcs_20250105/" aria-label="后一篇: 第一次考APCS心得"  title="后一篇: 第一次考APCS心得"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+          第一次考APCS心得
+      </h3>
+    </div>
   </nav>
 
 </article>
@@ -345,10 +354,10 @@
       </div>
       <div>
         <span class="icon-brush"></span>
-        433
+        2.1k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:03
+        00:11
       </div>
       <div>
         <span class="icon-eye"></span>
@@ -381,7 +390,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">2</div>
+    <div class="sidebar-state-number">3</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -574,7 +583,36 @@
   }
 </script>
 
+    <script data-pjax>
+      var __katexTagOverflowHandler;
+      if (__katexTagOverflowHandler) {
+        window.removeEventListener("resize", __katexTagOverflowHandler);
+      }
+      __katexTagOverflowHandler = function() {
+        _$$(".katex-display").forEach(function(elem) {
+          var ts = elem.querySelectorAll(".tag");
+          var eqns = elem.querySelectorAll(".base");
+          if (ts.length === 0 || eqns.length === 0) return;
+          var t = ts[0];
+          var lastEqn = eqns[eqns.length - 1];
+          var firstEqn = eqns[0];
+          if (lastEqn.getBoundingClientRect().right > t.getBoundingClientRect().left) {
+            t.classList.add("tag-overflowed");
+          } else if (firstEqn.getBoundingClientRect().left - elem.getBoundingClientRect().left >= t.offsetWidth / 2) {
+            t.classList.remove("tag-overflowed");
+          }
+        });
+      };
+      window.addEventListener("resize", __katexTagOverflowHandler);
+      window.katexTagOverflowHandler = __katexTagOverflowHandler;
+    </script>
+    
+<script src="https://npm.webcache.cn/katex@0.16.47/dist/katex.min.js" integrity="sha384-CwjPRVHTvLiMBFjEoij+QZViMV5rhTOIp7CJzl24JEqpRDA1sJFHVXXLURktbYYp" crossorigin="anonymous" defer data-pjax></script>
 
+    
+<script src="https://npm.webcache.cn/katex@0.16.47/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8&#x2F;NDKJhSGZNP&#x2F;khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous" defer onload="renderMathInElement(_$(&#39;article&#39;), {delimiters: [{left: &#39;$$&#39;, right: &#39;$$&#39;, display: true},{left: &#39;$&#39;, right: &#39;$&#39;, display: false}]});window.katexTagOverflowHandler?.();" data-pjax></script>
+
+  
 
   
 <script src="https://npm.webcache.cn/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha384-HeUHqi0nVsPUm&#x2F;E0ss7OfnIV&#x2F;yD96JWB8ehZvUuoVax9DpNHL17jj9pdfXHzqDxm" crossorigin="anonymous" defer></script>
