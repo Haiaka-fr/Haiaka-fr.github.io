@@ -5,7 +5,7 @@
   
   
   
-  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_ex15nbittbh';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-TW":"複製成功 (*^▽^*)","en":"Copy successfully (*^▽^*)"},"fail":{"zh-TW":"複製失敗 (ﾟ⊿ﾟ)ﾂ","en":"Copy failed (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本部落格所有文章除特別聲明外，均採用 BY-NC-SA 授權協議。轉載請註明出處！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://haiaka-fr.github.io';window.REIMU_CONFIG.relative = '/';window.REIMU_CONFIG.i18n_languages = ["en"];window.REIMU_CONFIG.dark_mode = {"button":true,"mode":false};</script>
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_ex15nbittbh';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-TW":"複製成功 (*^▽^*)"},"fail":{"zh-TW":"複製失敗 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本部落格所有文章除特別聲明外，均採用 BY-NC-SA 授權協議。轉載請註明出處！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://haiaka-fr.github.io';window.REIMU_CONFIG.relative = '/';window.REIMU_CONFIG.dark_mode = {"button":true,"mode":false};</script>
   <title>
     彙整: 2026/5 | Haiaka&#39;s bl0g
   </title>
@@ -121,52 +121,6 @@
   <nav id="sub-nav" aria-label="Secondary navigation">
       <a id="nav-rss-link" class="nav-icon" href="/404.html" title="RSS 訂閱" aria-label="RSS 訂閱" target="_blank"></a>
   </nav>
-    <nav id="i18n-nav" aria-label="Language selection">
-      <div class="custom-dropdown">
-        <div class="select-selected" id="select-selected" role="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Language menu">
-          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
-          <span id="selected-lang">正體中文</span>
-        </div>
-        <ul class="select-items" id="select-items" role="listbox" aria-label="Languages">
-            <li data-value="zh-TW" role="option" class="selected" aria-selected="true">正體中文</li>
-            <li data-value="en" role="option" aria-selected="false">English</li>
-        </ul>
-      </div>
-      <script>
-        var selectSelected = document.getElementById("select-selected");
-        var selectedLang = document.getElementById("selected-lang");
-        var selectItems = document.getElementById("select-items");
-        var selectOptions = selectItems.querySelectorAll("li");
-
-        selectSelected.addEventListener("click", () => {
-          selectItems.classList.toggle("show");
-          var expanded = selectSelected.getAttribute("aria-expanded") === "true";
-          selectSelected.setAttribute("aria-expanded", (!expanded).toString());
-        });
-
-        selectOptions.forEach((item) => {
-          item.addEventListener("click", () => {
-            const langMap = {};
-              langMap['zh-TW'] = '/archives/2026/05/';
-              langMap['en'] = '/en/archives/2026/05/';
-            selectedLang.textContent = item.textContent;
-            selectItems.classList.remove("show");
-            selectOptions.forEach((option) => {
-              option.classList.remove("selected");
-            });
-            item.classList.add("selected");
-            window.location = langMap[item.dataset.value];
-          });
-        });
-
-        document.addEventListener("click", (event) => {
-          if (!event.target.closest(".custom-dropdown")) {
-            selectItems.classList.remove("show");
-            selectSelected.setAttribute("aria-expanded", "false");
-          }
-        });
-      </script>
-    </nav>
 </div>
 <header id="header" aria-label="Site header">
       <picture>
@@ -197,7 +151,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">5</div>
+    <div class="sidebar-state-number">4</div>
   </div>
   <div class="sidebar-state-category">
     <div>分類</div>
@@ -260,7 +214,7 @@
     <div class="widget-wrap" data-aos="fade-up">
       <h3 class="widget-title">分類</h3>
       <div class="widget">
-        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/" title="生活">生活</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A8%8B%E5%BC%8F/" title="程式">程式</a><span class="category-list-count">3</span></li></ul>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/" title="生活">生活</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A8%8B%E5%BC%8F/" title="程式">程式</a><span class="category-list-count">3</span></li></ul>
       </div>
     </div>
   </div>
@@ -269,7 +223,7 @@
     <div class="widget-wrap" data-aos="fade-up">
       <h3 class="widget-title">標籤雲</h3>
       <div class="widget tagcloud">
-        <a href="/tags/C/" style="font-size: 10px;">C</a> <a href="/tags/Python/" style="font-size: 20px;">Python</a> <a href="/tags/blog/" style="font-size: 20px;">blog</a> <a href="/tags/%E7%AB%B6%E7%A8%8B/" style="font-size: 10px;">競程</a>
+        <a href="/tags/C/" style="font-size: 10px;">C</a> <a href="/tags/Python/" style="font-size: 20px;">Python</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/%E7%AB%B6%E7%A8%8B/" style="font-size: 10px;">競程</a>
       </div>
     </div>
   </div>
@@ -281,16 +235,16 @@
           <section id="main" aria-label="Main content"><div class="archives-outer-wrap" data-aos="fade-up">
     <div class="tag-wrap">
     <div class="archives-tag-list-item" data-aos="zoom-in">
-      <a class="archives-tag-list-link" href="/tags/%E7%AB%B6%E7%A8%8B/">競程</a>
-    </div>
-    <div class="archives-tag-list-item" data-aos="zoom-in">
       <a class="archives-tag-list-link" href="/tags/Python/">Python</a>
     </div>
     <div class="archives-tag-list-item" data-aos="zoom-in">
-      <a class="archives-tag-list-link" href="/tags/blog/">blog</a>
+      <a class="archives-tag-list-link" href="/tags/%E7%AB%B6%E7%A8%8B/">競程</a>
     </div>
     <div class="archives-tag-list-item" data-aos="zoom-in">
       <a class="archives-tag-list-link" href="/tags/C/">C</a>
+    </div>
+    <div class="archives-tag-list-item" data-aos="zoom-in">
+      <a class="archives-tag-list-link" href="/tags/blog/">blog</a>
     </div>
 </div>
 <div class="category-wrap">
@@ -338,10 +292,10 @@
       </div>
       <div>
         <span class="icon-brush"></span>
-        3.4k
+        3.3k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:17
+        00:16
       </div>
       <div>
         <span class="icon-eye"></span>
@@ -369,7 +323,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">5</div>
+    <div class="sidebar-state-number">4</div>
   </div>
   <div class="sidebar-state-category">
     <div>分類</div>
