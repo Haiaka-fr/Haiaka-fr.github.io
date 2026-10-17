@@ -4,14 +4,14 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|PingFang SC:400,400italic,700,700italic&display=swap");
 main {
-  --red-0: #0075db;
-  --red-1: #005bb5;
-  --red-2: #2690ff;
-  --red-3: #66b3ff;
-  --red-4: #99d1ff;
-  --red-5: #e6f2ff;
-  --red-5-5: #f0f7ff;
-  --red-6: #fafcff;
+  --red-0: #0d9488;
+  --red-1: #0f766e;
+  --red-2: #14b8a6;
+  --red-3: #5eead4;
+  --red-4: #99f6e4;
+  --red-5: #f0fdfa;
+  --red-5-5: #f5fbfb;
+  --red-6: #fafdfe;
   --color-prettylights-syntax-comment: #8b949e;
   --color-prettylights-syntax-constant: #79c0ff;
   --color-prettylights-syntax-entity: #d2a8ff;
