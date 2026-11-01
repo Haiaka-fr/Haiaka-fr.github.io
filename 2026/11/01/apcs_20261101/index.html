@@ -1,0 +1,648 @@
+  <!DOCTYPE html>
+  <html lang="zh-TW"  data-theme-mode="false">
+  <head>
+  <meta charset="utf-8">
+  
+  
+  
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_ex15nbittbh';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-TW":"複製成功 (*^▽^*)"},"fail":{"zh-TW":"複製失敗 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本部落格所有文章除特別聲明外，均採用 BY-NC-SA 授權協議。轉載請註明出處！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://haiaka-fr.github.io';window.REIMU_CONFIG.relative = '/';window.REIMU_CONFIG.dark_mode = {"button":true,"mode":false};</script>
+  <title>
+    再戰APCS！ | Haiaka&#39;s bl0g
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|PingFang SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|PingFang SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media='all'">
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_ex15nbittbh.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+    <meta name="description" content="WARNING 成績尚未公布，11&#x2F;13更新最新結果。   摘要 INFO 希望以下資料能幫助到各位！  高三了，我要再戰APCS！！！這一次已經是新制APCS了，我選擇的是Python觀念&#x2F;中高題本。 觀念：??分(?級分) 實作：???&#x2F;300(?級分)    題號 分數     1 ???&#x2F;100   2 ???&#x2F;100   3 ???&#x2F;100     中科大&amp;考試摘要 不知道什麼時">
+<meta property="og:type" content="article">
+<meta property="og:title" content="再戰APCS！">
+<meta property="og:url" content="https://haiaka-fr.github.io/2026/11/01/apcs_20261101/index.html">
+<meta property="og:site_name" content="Haiaka&#39;s bl0g">
+<meta property="og:description" content="WARNING 成績尚未公布，11&#x2F;13更新最新結果。   摘要 INFO 希望以下資料能幫助到各位！  高三了，我要再戰APCS！！！這一次已經是新制APCS了，我選擇的是Python觀念&#x2F;中高題本。 觀念：??分(?級分) 實作：???&#x2F;300(?級分)    題號 分數     1 ???&#x2F;100   2 ???&#x2F;100   3 ???&#x2F;100     中科大&amp;考試摘要 不知道什麼時">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2026-10-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-01T14:49:20.203Z">
+<meta property="article:author" content="Haiaka">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="競程">
+<meta name="twitter:card" content="summary">
+      <meta name="keywords" content="haiaka">
+    <link rel="alternate" href="/404.html" title="Haiaka's bl0g" >
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx/1oA/0l8ysE" crossorigin="anonymous">
+      <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://npm.webcache.cn/katex@0.16.47/dist/katex.min.css" integrity="sha384-nH0MfJ44wi1dd7w6jinlyBgljjS8EJAh2JBoRad8a3VDw2K69vfaaqm4WnR+gXtA" crossorigin="anonymous">
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.3/dist/aos.css" integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+      <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate">
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+      </div>
+      <div class="loading-word">睡著中...</div>
+    </div>
+  </div>
+  <script>
+    var time = null;
+    var loaderEl = document.getElementById('loader');
+    var startLoading = () => {
+      time = Date.now();
+      loaderEl.classList.remove("loading");
+    }
+    var hideLoader = () => {
+      document.body.style.overflow = 'auto';
+      loader.classList.add('loading');
+    };
+
+    var endLoading = () => {
+      if (!time) {
+        hideLoader();
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          hideLoader();
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    loaderEl.addEventListener('click', endLoading);
+  </script>
+<div id="copy-tooltip"></div>
+<div id="heatmap-tooltip"></div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav" aria-label="Primary navigation">
+        <a class="main-nav-link-wrap" href="/">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">首頁</span>
+        </a>
+        <a class="main-nav-link-wrap" href="/archives">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">歸檔</span>
+        </a>
+        <a class="main-nav-link-wrap" href="/about">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">關於</span>
+        </a>
+        <a class="main-nav-link-wrap" href="/friend">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">友鏈</span>
+        </a>
+    <a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
+  </nav>
+  <nav id="sub-nav" aria-label="Secondary navigation">
+      <a id="nav-rss-link" class="nav-icon" href="/404.html" title="RSS 訂閱" aria-label="RSS 訂閱" target="_blank"></a>
+  </nav>
+</div>
+<header id="header" aria-label="Site header">
+    <picture></picture>
+    <img  fetchpriority="high" src="https://raw.githubusercontent.com/Haiaka-fr/Haiaka-fr.github.io/refs/heads/main/post_images/apcs_20261101/cover.webp" alt="再戰APCS！">
+  <div id="header-outer">
+    <div id="header-title">
+          <span id="logo">
+            <h1 data-aos="slide-up">再戰APCS！</h1>
+          </span>
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+        </h2>
+    </div>
+  </div>
+</header>
+
+        <div id="content" aria-label="Page content" class="sidebar-left"  >
+          <aside id="sidebar" aria-label="Sidebar">
+  <div class="sidebar-wrapper-container sticky">
+  <div class="sidebar-wrapper">
+    <div class="sidebar-wrap" data-aos="fade-up">
+          <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目錄</h3>
+<div class="sidebar-toc-wrapper toc-div-class" >
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text"> 摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AD%E7%A7%91%E5%A4%A7%E8%80%83%E8%A9%A6%E6%91%98%E8%A6%81"><span class="toc-number">2.</span> <span class="toc-text"> 中科大&amp;考試摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AD%98%E8%AE%80%E5%BF%83%E5%BE%97"><span class="toc-number">3.</span> <span class="toc-text"> 識讀心得</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%A6%E4%BD%9C%E8%A7%A3%E6%9E%90%E6%88%91%E5%AF%AB%E7%9A%84%E8%A7%A3%E6%9E%90%E6%9C%89%E9%BB%9E%E6%8B%89"><span class="toc-number">4.</span> <span class="toc-text"> 實作解析(我寫的解析有點拉)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#p1-%E7%87%9F%E7%81%AB%E5%A5%BD%E5%83%8F%E6%98%AF%E5%8F%AB%E9%80%99%E5%80%8B%E5%90%A7"><span class="toc-number">4.1.</span> <span class="toc-text"> P1 - 營火(好像是叫這個吧)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B0%A1%E8%BF%B0%E9%A1%8C%E7%9B%AE"><span class="toc-number">4.1.1.</span> <span class="toc-text"> 簡述題目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%83%B3%E6%B3%95"><span class="toc-number">4.1.2.</span> <span class="toc-text"> 想法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94%E8%B7%9F%E6%88%91%E8%80%83%E8%A9%A6%E4%B8%8A%E5%AF%AB%E7%9A%84%E4%B8%8D%E5%A4%AA%E4%B8%80%E6%A8%A3%E6%88%91%E6%94%B9%E9%81%8E%E7%9A%84%E6%AD%A3%E7%A2%BA%E7%89%88"><span class="toc-number">4.1.3.</span> <span class="toc-text"> 解答(跟我考試上寫的不太一樣，我改過的正確版)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AF%84%E4%BE%8B%E6%B8%AC%E8%B3%87"><span class="toc-number">4.1.4.</span> <span class="toc-text"> 範例測資</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#p2-%E5%BF%98%E8%A8%98%E5%90%8D%E5%AD%97%E4%BA%86"><span class="toc-number">4.2.</span> <span class="toc-text"> P2 - 忘記名字了</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B0%A1%E8%BF%B0%E9%A1%8C%E7%9B%AE-2"><span class="toc-number">4.2.1.</span> <span class="toc-text"> 簡述題目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%83%B3%E6%B3%95-2"><span class="toc-number">4.2.2.</span> <span class="toc-text"> 想法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94"><span class="toc-number">4.2.3.</span> <span class="toc-text"> 解答</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AF%84%E4%BE%8B%E6%B8%AC%E8%B3%87-2"><span class="toc-number">4.2.4.</span> <span class="toc-text"> 範例測資</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#p3-%E5%86%B0%E9%9B%B9%E7%8C%9C%E6%83%B3%E5%90%8D%E5%AD%97%E4%B9%9F%E5%BF%98%E4%BA%86-%E6%88%91%E7%8C%9C%E7%9A%84"><span class="toc-number">4.3.</span> <span class="toc-text"> P3 - 冰雹猜想(名字也忘了 我猜的)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B0%A1%E8%BF%B0%E9%A1%8C%E7%9B%AE-3"><span class="toc-number">4.3.1.</span> <span class="toc-text"> 簡述題目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%83%B3%E6%B3%95-3"><span class="toc-number">4.3.2.</span> <span class="toc-text"> 想法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94-2"><span class="toc-number">4.3.3.</span> <span class="toc-text"> 解答</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AF%84%E4%BE%8B%E6%B8%AC%E8%B3%87-3"><span class="toc-number">4.3.4.</span> <span class="toc-text"> 範例測資</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%83%E5%BE%97"><span class="toc-number">5.</span> <span class="toc-text"> 心得</span></a></li></ol>
+</div>
+</div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Haiaka" class="lazyload">
+  <div class="sidebar-author-name">Haiaka</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分類</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>標籤</div>
+    <div class="sidebar-state-number">4</div>
+  </div>
+</div>
+<div class="sidebar-social" >
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/Haiaka-fr itemprop="url" target="_blank" aria-label="github" rel="noopener nofollow noreferrer"></a>
+    </div>
+    <div class="icon-instagram sidebar-social-icon">
+      <a href=https://www.instagram.com/aka_thatwhite itemprop="url" target="_blank" aria-label="instagram" rel="noopener nofollow noreferrer"></a>
+    </div>
+    <div class="icon-discord sidebar-social-icon">
+      <a href=https://discordapp.com/users/863427411060457483 itemprop="url" target="_blank" aria-label="discord" rel="noopener nofollow noreferrer"></a>
+    </div>
+    <div class="icon-steam sidebar-social-icon">
+      <a href=https://steamcommunity.com/profiles/76561199306756261/ itemprop="url" target="_blank" aria-label="steam" rel="noopener nofollow noreferrer"></a>
+    </div>
+</div>
+<div class="sidebar-menu">
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首頁"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">首頁</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="歸檔"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">歸檔</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="關於"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">關於</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友鏈"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">友鏈</div>
+      </div>
+</div>
+</div>
+          <div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div>
+    </div>
+  </div>
+  <div class="sidebar-widget">
+  </div>
+  </div>
+</aside>
+
+          <section id="main" aria-label="Main content"><article id="post-apcs_20261101" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <span class="article-date-link icon-calendar" data-aos="zoom-in">
+    <time datetime="2026-10-31T16:00:00.000Z" itemprop="datePublished">2026-11-01</time>
+    <time style="display: none;" id="post-update-time">2026-11-01</time>
+  </span>
+</div>
+
+    </div>
+    
+    <div class="hr-line"></div>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+        <blockquote class="warning custom-block"><p class="custom-block-title">WARNING</p>
+<p>成績尚未公布，11/13更新最新結果。</p>
+</blockquote>
+<h2 id="摘要"><a class="markdownIt-Anchor" href="#摘要"></a> 摘要</h2>
+<blockquote class="info custom-block"><p class="custom-block-title">INFO</p>
+<p>希望以下資料能幫助到各位！</p>
+</blockquote>
+<p>高三了，我要再戰APCS！！！這一次已經是新制APCS了，我選擇的是Python觀念/中高題本。</p>
+<p>觀念：??分(?級分)<br />
+實作：???/300(?級分)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">題號</th>
+<th style="text-align:center">分數</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">???/100</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">???/100</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">???/100</td>
+</tr>
+</tbody>
+</table>
+<h2 id="中科大考試摘要"><a class="markdownIt-Anchor" href="#中科大考試摘要"></a> 中科大&amp;考試摘要</h2>
+<p>不知道什麼時候開始，中興好像只開連兩場的第一場，阿我這個是第二場，所以只能去中科大，裡面超熱，建議各位穿短袖。</p>
+<p>如果是第一次考的人，其實重點就是要帶身份證明文件、一枝筆(不能帶橡皮擦、立可帶等，只能帶筆)，然後記得你的教室和准考證末三碼。</p>
+<h2 id="識讀心得"><a class="markdownIt-Anchor" href="#識讀心得"></a> 識讀心得</h2>
+<p>我感覺這次的識讀好簡單喔，APCS是不是偷偷放水？我大概預估自己錯個1題吧，有望滿分。識讀題我發現其實他會抓幾題以前考過的題目來改，所以大家可以熟悉一下範例題本。</p>
+<h2 id="實作解析我寫的解析有點拉"><a class="markdownIt-Anchor" href="#實作解析我寫的解析有點拉"></a> 實作解析(我寫的解析有點拉)</h2>
+<h3 id="p1-營火好像是叫這個吧"><a class="markdownIt-Anchor" href="#p1-營火好像是叫這個吧"></a> P1 - 營火(好像是叫這個吧)</h3>
+<p>APCS類題：<a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=c296">https://zerojudge.tw/ShowProblem?problemid=c296</a></p>
+<h4 id="簡述題目"><a class="markdownIt-Anchor" href="#簡述題目"></a> 簡述題目</h4>
+<p>有<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>個人分成<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span>隊，每個人都有一個隊伍編號，同一隊伍不一定坐在一起，然後從第一個人<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">a_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>開始找到第一個與自己不同隊伍的人把他的火把熄滅，然後換下一個人，最後剩下沒有滅掉的人都屬於同一個組別時結束，然後輸出滅火次數根剩餘組別。</p>
+<h4 id="想法"><a class="markdownIt-Anchor" href="#想法"></a> 想法</h4>
+<p>老實說我不知道這是什麼演算法欸，個人覺得很像老題目「<a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=c296">定時K彈</a>」。感覺就熟悉語法，<strong>資料結構模擬</strong>而已。</p>
+<h4 id="解答跟我考試上寫的不太一樣我改過的正確版"><a class="markdownIt-Anchor" href="#解答跟我考試上寫的不太一樣我改過的正確版"></a> 解答(跟我考試上寫的不太一樣，我改過的正確版)</h4>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">solve</span>():        </span><br><span class="line">    n, k = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split())</span><br><span class="line">    teams = [<span class="built_in">int</span>(x) <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">input</span>().split()]</span><br><span class="line">    </span><br><span class="line">    active = [<span class="literal">True</span>] * n</span><br><span class="line">    cnt = <span class="number">0</span></span><br><span class="line">    current = <span class="number">0</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        active_indices = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n) <span class="keyword">if</span> active[i]]</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> active_indices:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">            </span><br><span class="line">        first_team = teams[active_indices[<span class="number">0</span>]]</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">all</span>(teams[i] == first_team <span class="keyword">for</span> i <span class="keyword">in</span> active_indices):</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">            </span><br><span class="line">        <span class="keyword">while</span> current &lt; n <span class="keyword">and</span> <span class="keyword">not</span> active[current]:</span><br><span class="line">            current += <span class="number">1</span></span><br><span class="line">            </span><br><span class="line">        <span class="keyword">if</span> current &gt;= n:</span><br><span class="line">            current = <span class="number">0</span></span><br><span class="line">            <span class="keyword">while</span> current &lt; n <span class="keyword">and</span> <span class="keyword">not</span> active[current]:</span><br><span class="line">                current += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> current &gt;= n:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">        target = (current + <span class="number">1</span>) % n</span><br><span class="line">        steps_checked = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> steps_checked &lt; n:</span><br><span class="line">            <span class="keyword">if</span> active[target] <span class="keyword">and</span> teams[target] != teams[current]:</span><br><span class="line">                active[target] = <span class="literal">False</span></span><br><span class="line">                cnt += <span class="number">1</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            target = (target + <span class="number">1</span>) % n</span><br><span class="line">            steps_checked += <span class="number">1</span></span><br><span class="line">            </span><br><span class="line">        current = (current + <span class="number">1</span>) % n</span><br><span class="line"></span><br><span class="line">    remaining_teams = <span class="built_in">sorted</span>(<span class="built_in">list</span>(<span class="built_in">set</span>(teams[i] <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n) <span class="keyword">if</span> active[i])))</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">print</span>(cnt, <span class="string">&quot; &quot;</span>.join(<span class="built_in">map</span>(<span class="built_in">str</span>, remaining_teams)))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    solve()</span><br></pre></td></tr></table></figure>
+<h4 id="範例測資"><a class="markdownIt-Anchor" href="#範例測資"></a> 範例測資</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># input</span><br><span class="line">6 3</span><br><span class="line">2 2 1 3 2 1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># output</span><br><span class="line">3 2</span><br></pre></td></tr></table></figure>
+<p>(說明)<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">a_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>滅掉<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">a_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">a_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>滅掉<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">a_4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>5</mn></msub></mrow><annotation encoding="application/x-tex">a_5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>滅掉<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>6</mn></msub></mrow><annotation encoding="application/x-tex">a_6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">6</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，此時剩下的人皆是第<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>組的，滅火<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span>次。</p>
+<h3 id="p2-忘記名字了"><a class="markdownIt-Anchor" href="#p2-忘記名字了"></a> P2 - 忘記名字了</h3>
+<p>Leetcode類題：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/shortest-common-supersequence/description/">https://leetcode.cn/problems/shortest-common-supersequence/description/</a></p>
+<h4 id="簡述題目-2"><a class="markdownIt-Anchor" href="#簡述題目-2"></a> 簡述題目</h4>
+<p>給出<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>個長度為<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span>的字串，將他們組合起來變成一個新的字串<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span></span></span></span>滿足<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span></span></span></span>包含了所有<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>個字串。題目要求這個字串<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span></span></span></span>最短且字典序最小的字串是什麼。</p>
+<h4 id="想法-2"><a class="markdownIt-Anchor" href="#想法-2"></a> 想法</h4>
+<p>這是一個著名的<strong>NP-hard</strong>問題，代表以現在來看，解決它的時間複雜度一定是比多項式複雜度還要高的，所以題目給的<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>超小<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>≤</mo><mi>n</mi><mo>≤</mo><mn>9</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1\le n \le 9)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">9</span><span class="mclose">)</span></span></span></span>。所以<strong>直接枚舉結束</strong>！</p>
+<h4 id="解答"><a class="markdownIt-Anchor" href="#解答"></a> 解答</h4>
+<p>時間複雜度：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">!</mo><mo>×</mo><mi>n</mi><mo>×</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n! \times n \times k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span></span></span></span></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> itertools <span class="keyword">import</span> permutations</span><br><span class="line"></span><br><span class="line">n, k = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split())</span><br><span class="line">words = [<span class="built_in">input</span>().strip() <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n)]</span><br><span class="line"></span><br><span class="line">ans = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> p <span class="keyword">in</span> permutations(words):</span><br><span class="line">    gen = p[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">for</span> curr_word <span class="keyword">in</span> p[<span class="number">1</span>:]:</span><br><span class="line">        max_l = <span class="number">0</span></span><br><span class="line">        max_possible = <span class="built_in">min</span>(k, <span class="built_in">len</span>(gen))</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> l <span class="keyword">in</span> <span class="built_in">range</span>(max_possible, <span class="number">0</span>, -<span class="number">1</span>):</span><br><span class="line">            <span class="keyword">if</span> gen.endswith(curr_word[:l]):</span><br><span class="line">                max_l = l</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">                </span><br><span class="line">        gen += curr_word[max_l:]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ans <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        ans = gen</span><br><span class="line">    <span class="keyword">elif</span> <span class="built_in">len</span>(gen) &lt; <span class="built_in">len</span>(ans):</span><br><span class="line">        ans = gen</span><br><span class="line">    <span class="keyword">elif</span> <span class="built_in">len</span>(gen) == <span class="built_in">len</span>(ans):</span><br><span class="line">        ans = <span class="built_in">min</span>(ans, gen)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(ans)</span><br></pre></td></tr></table></figure>
+<h4 id="範例測資-2"><a class="markdownIt-Anchor" href="#範例測資-2"></a> 範例測資</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># input</span><br><span class="line">3 3</span><br><span class="line">bab</span><br><span class="line">abb</span><br><span class="line">bcc</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># output</span><br><span class="line">babbcc</span><br></pre></td></tr></table></figure>
+<h3 id="p3-冰雹猜想名字也忘了-我猜的"><a class="markdownIt-Anchor" href="#p3-冰雹猜想名字也忘了-我猜的"></a> P3 - 冰雹猜想(名字也忘了 我猜的)</h3>
+<h4 id="簡述題目-3"><a class="markdownIt-Anchor" href="#簡述題目-3"></a> 簡述題目</h4>
+<p>給你三個正整數<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo separator="true">,</mo><mi>k</mi><mo separator="true">,</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">n,k,q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span></span></span>，還有一個操作<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mfrac><mi>n</mi><mn>2</mn></mfrac></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>if </mtext><mi>n</mi><mtext> is even</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>3</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>if </mtext><mi>n</mi><mtext> is odd</mtext></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(n) = \begin{cases} \frac{n}{2} &amp; \text{if } n \text{ is even} \\ 3n + 1 &amp; \text{if } n \text{ is odd} \end{cases}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:3em;vertical-align:-1.25em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6954em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">3</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">if </span></span><span class="mord mathnormal">n</span><span class="mord text"><span class="mord"> is even</span></span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">if </span></span><span class="mord mathnormal">n</span><span class="mord text"><span class="mord"> is odd</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>，每次操作記做一步。</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span></span></span>代表有<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span></span></span>個正整數要詢問，最後把<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span></span></span>次詢問的答案加總。接著題目問說「對於<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span></span></span>個詢問中的第<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span>個數字<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，最靠近<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的正整數<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">p_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>使得<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">p_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>在不高於<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span>次步數下數值變為<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>」。</p>
+<h4 id="想法-3"><a class="markdownIt-Anchor" href="#想法-3"></a> 想法</h4>
+<p>可惜了，因為我卡P2太久，一直在debug，所以沒注意時間，不過考完後我還是有回來想這一題，結果超級簡單…</p>
+<p>我們<strong>只要從<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>回推<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span>步，所有的情況長的會像一棵樹，你只要依序抓出最靠近<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span></span></span>個數值就好</strong>。</p>
+<h4 id="解答-2"><a class="markdownIt-Anchor" href="#解答-2"></a> 解答</h4>
+<p>不好意思 沒來的及寫</p>
+<h4 id="範例測資-3"><a class="markdownIt-Anchor" href="#範例測資-3"></a> 範例測資</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># input</span><br><span class="line">11 3 1</span><br><span class="line">300</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># output</span><br><span class="line">88</span><br></pre></td></tr></table></figure>
+<h2 id="心得"><a class="markdownIt-Anchor" href="#心得"></a> 心得</h2>
+<p>其實我覺得最重要還是<strong>時間管理</strong>，我前一天還有刷到要給自己定一個停損時間，<strong>大約是25~30分鐘，超過就去看其他題</strong>，我P1有這樣做，但最後我覺得P2很有機會就一直糾結在P2上，結果最後就是很慘，所以良心建議時間管理！！！再來就是識讀吧，其實識讀都出得很佛，只要有潤過範例題，大概知道C、Python有什麼語法或者物件上的小陷阱(像是區域、全域變數的分辨；邏輯順序等)。</p>
+
+    </div>
+    <footer class="article-footer">
+        <div class="share-wrapper">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhaiaka-fr.github.io%2F2026%2F11%2F01%2Fapcs_20261101%2F" target="_blank" rel="noopener noreferrer" title="再戰APCS！">
+      <div class="share-icon icon icon-facebook">
+      </div>
+    </a>
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhaiaka-fr.github.io%2F2026%2F11%2F01%2Fapcs_20261101%2F&amp;text=%E5%86%8D%E6%88%B0APCS%EF%BC%81&amp;via=https%3A%2F%2Fhaiaka-fr.github.io" target="_blank" rel="noopener noreferrer" title="再戰APCS！">
+      <div class="share-icon icon icon-twitter">
+      </div>
+    </a>
+    <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fhaiaka-fr.github.io%2F2026%2F11%2F01%2Fapcs_20261101%2F&amp;title=%E5%86%8D%E6%88%B0APCS%EF%BC%81" target="_blank" rel="noopener noreferrer" title="再戰APCS！">
+      <div class="share-icon icon icon-reddit">
+      </div>
+    </a>
+</div>
+        <a class="article-category-link" href="/categories/%E7%A8%8B%E5%BC%8F/" title="程式" data-aos="zoom-in">程式</a>
+
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/Python/" rel="tag" title="Python">Python</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E7%AB%B6%E7%A8%8B/" rel="tag" title="競程">競程</a></li></ul>
+
+    </footer>
+  </div>
+    <nav id="article-nav" aria-label="Article navigation" data-aos="fade-up">
+    <div class="article-nav-link-wrap right">
+        <img data-src="https://raw.githubusercontent.com/Haiaka-fr/Haiaka-fr.github.io/refs/heads/main/post_images/cycs_cp/cover.webp" data-sizes="auto" alt="長億115首屆競程舉辦心得" class="lazyload">
+      <a href="/2026/05/15/cypc_cp/" aria-label="後一篇: 長億115首屆競程舉辦心得"  title="後一篇: 長億115首屆競程舉辦心得"></a>
+      <div class="article-nav-caption">後一篇</div>
+      <h3 class="article-nav-title">
+          長億115首屆競程舉辦心得
+      </h3>
+    </div>
+  </nav>
+
+</article>
+
+
+</section>
+        </div>
+        <footer id="footer" aria-label="Site footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    <div>
+      <span class="icon-copyright"></span>
+        2026
+        <span class="footer-info-sep rotate"></span>
+      Haiaka
+    </div>
+      <div>
+        基於&nbsp;<a href="https://hexo.io/" rel="noopener nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+      <div>
+        <span class="icon-brush"></span>
+        4.6k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        00:22
+      </div>
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">總訪問量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">總訪客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+  </div>
+</footer>
+
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav" aria-label="Mobile navigation">
+  <div class="sidebar-wrap">
+        <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目錄</h3>
+<div class="sidebar-toc-wrapper toc-div-class" >
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text"> 摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AD%E7%A7%91%E5%A4%A7%E8%80%83%E8%A9%A6%E6%91%98%E8%A6%81"><span class="toc-number">2.</span> <span class="toc-text"> 中科大&amp;考試摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AD%98%E8%AE%80%E5%BF%83%E5%BE%97"><span class="toc-number">3.</span> <span class="toc-text"> 識讀心得</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%A6%E4%BD%9C%E8%A7%A3%E6%9E%90%E6%88%91%E5%AF%AB%E7%9A%84%E8%A7%A3%E6%9E%90%E6%9C%89%E9%BB%9E%E6%8B%89"><span class="toc-number">4.</span> <span class="toc-text"> 實作解析(我寫的解析有點拉)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#p1-%E7%87%9F%E7%81%AB%E5%A5%BD%E5%83%8F%E6%98%AF%E5%8F%AB%E9%80%99%E5%80%8B%E5%90%A7"><span class="toc-number">4.1.</span> <span class="toc-text"> P1 - 營火(好像是叫這個吧)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B0%A1%E8%BF%B0%E9%A1%8C%E7%9B%AE"><span class="toc-number">4.1.1.</span> <span class="toc-text"> 簡述題目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%83%B3%E6%B3%95"><span class="toc-number">4.1.2.</span> <span class="toc-text"> 想法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94%E8%B7%9F%E6%88%91%E8%80%83%E8%A9%A6%E4%B8%8A%E5%AF%AB%E7%9A%84%E4%B8%8D%E5%A4%AA%E4%B8%80%E6%A8%A3%E6%88%91%E6%94%B9%E9%81%8E%E7%9A%84%E6%AD%A3%E7%A2%BA%E7%89%88"><span class="toc-number">4.1.3.</span> <span class="toc-text"> 解答(跟我考試上寫的不太一樣，我改過的正確版)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AF%84%E4%BE%8B%E6%B8%AC%E8%B3%87"><span class="toc-number">4.1.4.</span> <span class="toc-text"> 範例測資</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#p2-%E5%BF%98%E8%A8%98%E5%90%8D%E5%AD%97%E4%BA%86"><span class="toc-number">4.2.</span> <span class="toc-text"> P2 - 忘記名字了</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B0%A1%E8%BF%B0%E9%A1%8C%E7%9B%AE-2"><span class="toc-number">4.2.1.</span> <span class="toc-text"> 簡述題目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%83%B3%E6%B3%95-2"><span class="toc-number">4.2.2.</span> <span class="toc-text"> 想法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94"><span class="toc-number">4.2.3.</span> <span class="toc-text"> 解答</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AF%84%E4%BE%8B%E6%B8%AC%E8%B3%87-2"><span class="toc-number">4.2.4.</span> <span class="toc-text"> 範例測資</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#p3-%E5%86%B0%E9%9B%B9%E7%8C%9C%E6%83%B3%E5%90%8D%E5%AD%97%E4%B9%9F%E5%BF%98%E4%BA%86-%E6%88%91%E7%8C%9C%E7%9A%84"><span class="toc-number">4.3.</span> <span class="toc-text"> P3 - 冰雹猜想(名字也忘了 我猜的)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B0%A1%E8%BF%B0%E9%A1%8C%E7%9B%AE-3"><span class="toc-number">4.3.1.</span> <span class="toc-text"> 簡述題目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%83%B3%E6%B3%95-3"><span class="toc-number">4.3.2.</span> <span class="toc-text"> 想法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94-2"><span class="toc-number">4.3.3.</span> <span class="toc-text"> 解答</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AF%84%E4%BE%8B%E6%B8%AC%E8%B3%87-3"><span class="toc-number">4.3.4.</span> <span class="toc-text"> 範例測資</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%83%E5%BE%97"><span class="toc-number">5.</span> <span class="toc-text"> 心得</span></a></li></ol>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Haiaka" class="lazyload">
+  <div class="sidebar-author-name">Haiaka</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分類</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>標籤</div>
+    <div class="sidebar-state-number">4</div>
+  </div>
+</div>
+<div class="sidebar-social" >
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/Haiaka-fr itemprop="url" target="_blank" aria-label="github" rel="noopener nofollow noreferrer"></a>
+    </div>
+    <div class="icon-instagram sidebar-social-icon">
+      <a href=https://www.instagram.com/aka_thatwhite itemprop="url" target="_blank" aria-label="instagram" rel="noopener nofollow noreferrer"></a>
+    </div>
+    <div class="icon-discord sidebar-social-icon">
+      <a href=https://discordapp.com/users/863427411060457483 itemprop="url" target="_blank" aria-label="discord" rel="noopener nofollow noreferrer"></a>
+    </div>
+    <div class="icon-steam sidebar-social-icon">
+      <a href=https://steamcommunity.com/profiles/76561199306756261/ itemprop="url" target="_blank" aria-label="steam" rel="noopener nofollow noreferrer"></a>
+    </div>
+</div>
+<div class="sidebar-menu">
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首頁"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">首頁</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="歸檔"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">歸檔</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="關於"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">關於</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友鏈"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">友鏈</div>
+      </div>
+</div>
+</div>
+  </div>
+      <div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div>
+</nav>
+
+    </div>
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+
+  <script>
+    var setupFirework = () => {
+      if (!false || !window.matchMedia('(max-width: 768px)').matches) {
+        window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["var(--red-1)","var(--red-2)","var(--red-3)","var(--red-4)"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["var(--red-0)"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'));
+      }
+    }
+  </script>
+  
+<script src="https://npm.webcache.cn/mouse-firework@0.2.0/dist/index.umd.js" integrity="sha384-qi9WggRt19tv8Vc7pCHW3ulMNLwrn515zaLEWZjl1px07vz8+pUoWX8n1rgq282T" crossorigin="anonymous" onload="setupFirework()" defer></script>
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "Haiaka",
+          title: "再戰APCS！",
+          url: "https://haiaka-fr.github.io/2026/11/01/apcs_20261101/",
+          excerpt: "",
+          description: "",
+          stripContent: "WARNING 成績尚未公布，11/13更新最新結果。   摘要 INFO 希望以下資料能幫助到各位！  高三了，我要再戰APCS！！！這一次已經是新制APCS了，我選擇的是Python觀念/中高題本。 觀念：??分(?級分) 實作：???/300(?級分)    題號 分數     1 ???/100   2 ???/100   3 ???/100     中科大&amp;amp;考試摘要 不知道什麼時候開始，中興好像只開連兩場的第一場，阿我這個是第二場，所以只能去中科大，裡面超熱，建議各位穿短袖。 ",
+          date: "Sun Nov 01 2026 00:00:00 GMT+0800",
+          updated: "Sun Nov 01 2026 22:49:20 GMT+0800",
+          cover: "https://raw.githubusercontent.com/Haiaka-fr/Haiaka-fr.github.io/refs/heads/main/post_images/apcs_20261101/cover.webp",
+        };
+      </script>
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+      
+<script src="/js/tabs.js" data-pjax defer></script>
+
+      <script type="module" data-pjax>
+        (async () => {
+          const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+          const initPswp = (gallery, children) => {
+            if (_$$(`${gallery} ${children}`).length > 0) {
+              new PhotoSwipeLightbox({
+                gallery,
+                children,
+                pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+              }).init();
+            }
+          }
+          const pswp = () => {
+            initPswp('.article-entry', 'a.article-gallery-item');
+            initPswp('.article-gallery', 'a.article-gallery-item');
+          }
+          pswp();
+        })();
+      </script>
+        
+
+
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.12.6' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+    <script data-pjax>
+      var __katexTagOverflowHandler;
+      if (__katexTagOverflowHandler) {
+        window.removeEventListener("resize", __katexTagOverflowHandler);
+      }
+      __katexTagOverflowHandler = function() {
+        _$$(".katex-display").forEach(function(elem) {
+          var ts = elem.querySelectorAll(".tag");
+          var eqns = elem.querySelectorAll(".base");
+          if (ts.length === 0 || eqns.length === 0) return;
+          var t = ts[0];
+          var lastEqn = eqns[eqns.length - 1];
+          var firstEqn = eqns[0];
+          if (lastEqn.getBoundingClientRect().right > t.getBoundingClientRect().left) {
+            t.classList.add("tag-overflowed");
+          } else if (firstEqn.getBoundingClientRect().left - elem.getBoundingClientRect().left >= t.offsetWidth / 2) {
+            t.classList.remove("tag-overflowed");
+          }
+        });
+      };
+      window.addEventListener("resize", __katexTagOverflowHandler);
+      window.katexTagOverflowHandler = __katexTagOverflowHandler;
+    </script>
+    
+<script src="https://npm.webcache.cn/katex@0.16.47/dist/katex.min.js" integrity="sha384-CwjPRVHTvLiMBFjEoij+QZViMV5rhTOIp7CJzl24JEqpRDA1sJFHVXXLURktbYYp" crossorigin="anonymous" defer data-pjax></script>
+
+    
+<script src="https://npm.webcache.cn/katex@0.16.47/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8&#x2F;NDKJhSGZNP&#x2F;khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous" defer onload="renderMathInElement(_$(&#39;article&#39;), {delimiters: [{left: &#39;$$&#39;, right: &#39;$$&#39;, display: true},{left: &#39;$&#39;, right: &#39;$&#39;, display: false}]});window.katexTagOverflowHandler?.();" data-pjax></script>
+
+  
+
+  
+<script src="https://npm.webcache.cn/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha384-HeUHqi0nVsPUm&#x2F;E0ss7OfnIV&#x2F;yD96JWB8ehZvUuoVax9DpNHL17jj9pdfXHzqDxm" crossorigin="anonymous" defer></script>
+
+  <script data-pjax>
+    if (document.readyState === "loading") {
+      document.addEventListener('DOMContentLoaded', () => {
+        pangu?.spacingPage();
+      });
+    } else {
+      pangu?.spacingPage();
+    }
+  </script>
+
+  </body>
+  </html>
